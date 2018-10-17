@@ -10,6 +10,8 @@ const clamp = (n, lowerBound, upperBound) =>
  * Creates a history object that stores locations in memory.
  */
 const createMemoryHistory = (props = {}) => {
+  console.log('in createMemoryHistory');
+
   const {
     getUserConfirmation,
     initialEntries = ["/"],
